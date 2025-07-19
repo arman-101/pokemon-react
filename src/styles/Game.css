@@ -1,0 +1,82 @@
+.game {
+    padding: 1rem 5rem 3rem 5rem;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.cards-box {
+    border: 2px solid #004030;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cards-box:hover {
+    background-color: #FFF9E5;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cards p {
+    color: #004030;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cards img {
+    scale: 1.5;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.data p {
+    color: #004030;
+    font-size: 1.8rem;
+}
+
+.new-button {
+    padding: 0.6rem 1rem;
+    margin-left: 4rem;
+    background-color: white;
+    border: 2px solid #004030;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    color: #004030;
+    transition: 0.2s ease;
+}
+
+.new-button:hover {
+    background-color: #FFF9E5;
+    scale: 1.05;
+}
+
+@media (max-width: 750px) {
+    .data {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .new-button {
+        margin-left: 0;
+    }
+}

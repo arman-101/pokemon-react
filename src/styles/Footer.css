@@ -1,0 +1,21 @@
+footer {
+    background-color: #DCD0A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+footer img {
+    width: 1.8rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+footer img:hover {
+    width: 1.9rem;
+}
